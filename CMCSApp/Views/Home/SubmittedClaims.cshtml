@@ -1,0 +1,85 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<style>
+    .badge-warning {
+        background-color: #ffc107; /* Yellow for Pending */
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    .badge-success {
+        background-color: #28a745; /* Green for Approved/Payed */
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    .badge-danger {
+        background-color: #dc3545; /* Red for Rejected */
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+</style>
+
+<div class="text-center">
+    <h1>Submitted Claims</h1>
+</div>
+<!-- Optional: Filter/Search Section -->
+<div class="mb-3">
+    <input type="text" class="form-control" id="searchClaim" placeholder="Search by module or status...">
+</div>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>LECTURER NO.</th>
+                <th>PROGRAMME</th>
+                <th>MODULE(S)</th>
+                <th>HOURS</th>
+                <th>TOTAL</th>
+                <th>DATE</th>
+                <th>STATUS</th>
+                <th>CHANGES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>L86-437-87</td>
+                <td>DISD0601</td>
+                <td>PROG6212</td>
+                <td>8</td>
+                <td>R 1.180</td>
+                <td>09-10-2024</td>
+                <td><span class="badge badge-warning">Pending</span></td>
+                <td><button class="btn btn-primary btn-sm">Edit</button></td>
+
+            </tr>
+            <tr>
+                <td>L86-437-87</td>
+                <td>DINM0601</td>
+                <td>PROG6221/DATA6222</td>
+                <td>12</td>
+                <td>R2.120</td>
+                <td>09-09-2024</td>
+                <td><span class="badge badge-success">Approved</span></td>
+                <td><button class="btn btn-primary btn-sm">View Only</button></td>
+
+            </tr>
+            <tr>
+                <td>L86-437-87</td>
+                <td>DITM0601</td>
+                <td>PROG6222</td>
+                <td>10</td>
+                <td>R1.500</td>
+                <td>08-10-2024</td>
+                <td><span class="badge badge-danger">Rejected</span></td>
+                <td><button class="btn btn-primary btn-sm">View Only</button></td>
+            </tr>
+        </tbody>
+
+
+    </table>
+</div>
