@@ -13,6 +13,11 @@ namespace CMCSApp.Controllers
             _logger = logger;
         }
 
+        public IActionResult Claims()
+        {
+            return View();
+        }
+
         public IActionResult Index()
         {
             return View();
