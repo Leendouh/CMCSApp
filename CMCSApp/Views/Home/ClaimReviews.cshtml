@@ -1,0 +1,153 @@
+﻿@{
+    ViewData["Title"] = "Review Page";
+}
+
+<style>
+    /* Styling for the review container */
+    .review-container {
+        display: flex;
+        flex-direction: column; /* Stack sections vertically */
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+        padding: 20px;
+        margin: 20px auto; /* Center the container horizontally and add vertical margin */
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 80%;
+        max-width: 1000px;
+        transform: translateX(10px); /* Move the container 10px to the right */
+    }
+
+    /* Styling for section headers */
+    .review-header {
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    /* Styling for review details */
+    .review-detail {
+        margin-bottom: 10px;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    /* Styling for buttons */
+    .button-group {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .btn {
+        width: 48%;
+        height: 40px;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+    }
+</style>
+
+<div class="review-container">
+    <div class="review-header">
+        Review Your Details
+    </div>
+
+    <!-- Lecturer Information Section -->
+    <div class="review-detail">
+        <strong>Lecturer Name:</strong> Lindokuhle
+    </div>
+    <div class="review-detail">
+        <strong>Lecturer Surname:</strong> Zwane
+    </div>
+    <div class="review-detail">
+        <strong>Lecturer Employee No.:</strong> L86-437-87
+    </div>
+    <div class="review-detail">
+        <strong>Contact Details:</strong> (+27) 23 456-7890
+    </div>
+
+    <!-- Claim Details Section -->
+    <div class="review-detail">
+        <strong>Module:</strong> Introduction to Programming
+    </div>
+    <div class="review-detail">
+        <strong>Programme:</strong> Computer Science
+    </div>
+    <div class="review-detail">
+        <strong>Number of Hours Worked:</strong> 15
+    </div>
+    <div class="review-detail">
+        <strong>Hourly Rate:</strong> R150
+    </div>
+    <div class="review-detail">
+        <strong>Date Submitted:</strong> 2024-09-08
+    </div>
+    <div class="review-detail">
+        <strong>Supporting Documents:</strong> No documents attached
+    </div>
+
+    <!-- Buttons to confirm or edit -->
+    <div class="button-group">
+        <button class="btn btn-secondary" type="button" onclick="window.history.back()">Edit</button>
+        <button class="btn btn-primary" type="button">Confirm</button>
+    </div>
+</div>
+<div class="review-container">
+    <div class="review-header">
+        Review Your Details
+    </div>
+
+    <!-- Lecturer Information Section -->
+    <div class="review-detail">
+        <strong>Lecturer Name:</strong> Sthembiso
+    </div>
+    <div class="review-detail">
+        <strong>Lecturer Surname:</strong> Msezane
+    </div>
+    <div class="review-detail">
+        <strong>Lecturer Employee No.:</strong> L86-437-89
+    </div>
+    <div class="review-detail">
+        <strong>Contact Details:</strong> (+27) 23 456-7890
+    </div>
+
+    <!-- Claim Details Section -->
+    <div class="review-detail">
+        <strong>Module:</strong> Introduction to Database
+    </div>
+    <div class="review-detail">
+        <strong>Programme:</strong> Computer Science
+    </div>
+    <div class="review-detail">
+        <strong>Number of Hours Worked:</strong> 15
+    </div>
+    <div class="review-detail">
+        <strong>Hourly Rate:</strong> R150
+    </div>
+    <div class="review-detail">
+        <strong>Date Submitted:</strong> 2024-08-08
+    </div>
+    <div class="review-detail">
+        <strong>Supporting Documents:</strong> Claim_Document.pdf
+    </div>
+
+    <!-- Buttons to confirm or edit -->
+    <div class="button-group">
+        <button class="btn btn-secondary" type="button" onclick="window.history.back()">Edit</button>
+        <button class="btn btn-primary" type="button">Confirm</button>
+    </div>
+</div>
+

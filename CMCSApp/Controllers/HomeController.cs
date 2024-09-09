@@ -26,6 +26,10 @@ namespace CMCSApp.Controllers
         {
             return View();
         }
+        public IActionResult ClaimReviews()
+        {
+            return View();
+        }
         public IActionResult Index()
         {
             return View();
