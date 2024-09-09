@@ -18,6 +18,10 @@ namespace CMCSApp.Controllers
             return View();
         }
 
+        public IActionResult LecturerForm()
+        {
+            return View();
+        }
         public IActionResult Index()
         {
             return View();

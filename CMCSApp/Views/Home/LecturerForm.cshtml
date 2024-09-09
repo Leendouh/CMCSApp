@@ -1,0 +1,129 @@
+﻿@{
+    ViewData["Title"] = "Claim Page";
+}
+
+<style>
+    /* Styling for the form container */
+    .form {
+        display: flex;
+        justify-content: center; /* Center the form horizontally */
+        align-items: flex-start; /* Align to the top to prevent vertical centering */
+        padding: 20px; /* Add padding to the container */
+        margin: 20px; /* Add margin around the form container */
+    }
+
+    /* Styling for the form itself */
+    form {
+        background-color: #f8f9fa; /* Light background for the form */
+        padding: 20px; /* Padding around the form content */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        width: 1000px; /* Set width for the claim form */
+        max-width: 100%; /* Ensure responsiveness */
+        margin: 0 auto; /* Center the form */
+    }
+
+    /* Styling for the section containers */
+    .section-container {
+        display: flex; /* Enable flexbox layout for sections */
+        justify-content: space-between; /* Space between sections */
+        margin-bottom: 20px; /* Space below sections */
+    }
+
+    /* Styling for each section box */
+    .section-box {
+        flex: 1; /* Allow sections to grow equally */
+        padding: 20px;
+        margin-right: 10px; /* Space between sections */
+        border: 1px solid #ddd; /* Light border around each section */
+        border-radius: 10px; /* Rounded corners for sections */
+        height: 100%; /* Ensure full height */
+    }
+
+    /* Remove margin from the last section */
+    .section-box:last-child {
+        margin-right: 0; /* No margin for the last section */
+    }
+
+    /* Styling for the labels */
+    label {
+        width: 100%; /* Set labels to take full width */
+        margin-top: 10px;
+    }
+
+    /* Styling for the input fields */
+    .form-control {
+        width: 100%; /* Make input fields take full width */
+        height: 35px; /* Set the height of input fields */
+        margin-bottom: 15px;
+    }
+
+    /* Styling for buttons container */
+    .button-group {
+        display: flex;
+        justify-content: space-between; /* Space between buttons */
+        margin-top: 20px; /* Space above button group */
+    }
+
+    /* Styling for buttons */
+    .btn {
+        width: 48%; /* Each button takes 48% of the row width */
+        height: 40px;
+    }
+
+    .form-header {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+</style>
+
+<div class="form">
+    <form action="/">
+        <!-- Section containers -->
+        <div class="section-container">
+            <!-- Lecturer Information Section -->
+            <div class="section-box">
+                <h4>Lecturer Information</h4>
+                <label for="Name">Lecturer Name</label>
+                <input type="text" id="Name" name="Name" class="form-control" placeholder="Enter your name" />
+
+                <label for="Surname">Lecturer Surname</label>
+                <input type="text" id="Surname" name="Surname" class="form-control" placeholder="Enter your surname" />
+
+                <label for="Employee">Lecturer Employee No.</label>
+                <input type="text" id="Employee" name="Employee" class="form-control" placeholder="Enter employee number" />
+
+                <label for="Contact">Contact Details</label>
+                <input type="text" id="Contact" name="Contact" class="form-control" placeholder="Enter contact number" />
+            </div>
+
+            <!-- Claim Details Section -->
+            <div class="section-box">
+                <h4>Claim Details</h4>
+                <label for="Module">Module</label>
+                <input type="text" id="Module" name="Module" class="form-control" placeholder="Enter module name" />
+
+                <label for="Programme">Programme</label>
+                <input type="text" id="Programme" name="Programme" class="form-control" placeholder="Enter programme" />
+
+                <label for="Hours">Number of Hours Worked</label>
+                <input type="text" id="Hours" name="Hours" class="form-control" placeholder="Enter hours" />
+
+                <label for="Rate">Hourly Rate</label>
+                <input type="text" id="Rate" name="Rate" class="form-control" placeholder="Enter rate" />
+
+                <label for="DateSubmitted">Date Submitted</label>
+                <input type="date" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+
+                <label for="SupportingDocuments">Supporting Documents (Optional)</label>
+                <input type="file" class="form-control" multiple />
+            </div>
+        </div>
+
+        <!-- Buttons with space between them -->
+        <div class="button-group">
+            <button class="btn btn-secondary" type="submit">Add Another Module</button>
+            <button class="btn btn-primary" type="submit">Submit Claim</button>
+        </div>
+    </form>
+</div>
